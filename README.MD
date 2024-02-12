@@ -1,8 +1,23 @@
-usage 
-python main.py --token [YOUR_TOKEN] GIT_REPO_OWNER GIT_REPO_NAME
+## Info
+Program to generate commit history from a given Git repository
 
-outputs graph dot file and if graph is acyclic or not
- 
- to generate image you can install dot and run create_graph_image.bat on windows
+Usage:
+```
+python main.py --token [YOUR_TOKEN] [GIT_REPO_OWNER] [GIT_REPO_NAME]
+```
 
- or run create_graph_image.sh on linux, output will be graph.png image with the nodes and relations
+## Outputs
+Generates graph dot file and prints to console if graph is acyclic or not
+
+## Generate graph image
+Windows:
+```
+create_graph_image.bat
+```
+
+Linux:
+```
+./create_graph_image.sh
+```
+
+The output will be a png file called graph.png with the relations
